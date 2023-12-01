@@ -5,5 +5,11 @@ public class gitTehtäväRyhmä4 {
 		// TODO Auto-generated method stub
 
 	}
+	
+class Auto {
+	public String merkki;
+	public String Malli;
+	public int bensanMaara;
+}
 
 }
