@@ -21,6 +21,7 @@ class Auto {
 	public String merkki;
 	public String malli;
 	public int bensanMaara;
+	public int tankkaus;
 
 	//Metodit
 	public void Jarruta () {
@@ -47,5 +48,13 @@ class Auto {
 		System.out.println("Auton malli: " + malli);
 		System.out.println("Auton bensan määrä: " + bensanMaara);
 	}
+
+	public void tankkaa()
+	{
+		tankkaus = 0;
+		int bensaaTankissa = bensanMaara + tankkaus;
+		System.out.println("Tankissa bensaa tankkauksen jälkeen " + bensaaTankissa + " litraa.")
+	}
+
 
 }
