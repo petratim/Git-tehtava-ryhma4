@@ -12,6 +12,12 @@ public class gitTehtäväRyhmä4 {
 		auto1.Kiihdyta();
 		auto1.NaytaTiedot();
 
+		Auto auto2 = new Auto();
+		auto2.merkki = "Lada";
+		auto2.malli = "1200L";
+		auto2.bensanMaara = 10;
+		auto2.NaytaTiedot();
+
 	}//End of main
 }	
 	
@@ -22,6 +28,20 @@ class Auto {
 	public String malli;
 	public int bensanMaara;
 	public int tankkaus;
+
+	public Auto() //oletusmuodostin
+	{
+		merkki = "";
+		malli = "";
+		bensanMaara = 0;
+	}
+
+	public Auto(String m, String ma, int b)  //parametrinen muodostin
+	{
+		merkki=m;
+		malli=ma;
+		bensanMaara=b;
+	}
 
 	//Metodit
 	public void Jarruta () {
