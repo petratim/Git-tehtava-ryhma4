@@ -30,8 +30,15 @@ class Auto {
 
 	public void Kiihdyta () {
 
-		System.out.println("Auto kiihtyy.");
-		bensanMaara = bensanMaara - 1;
+		if (bensanMaara>0) {
+			System.out.println("Auto kiihtyy.");
+			bensanMaara = bensanMaara - 1;
+		}
+		else
+		{
+			System.out.println("Autossa ei ole polttoainetta.");
+			System.out.println("Auto ei voi kiihdyttää.");
+		}
 	}
 
 	public void NaytaTiedot () {
