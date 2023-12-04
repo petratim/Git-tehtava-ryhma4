@@ -2,31 +2,43 @@
 public class gitTehtäväRyhmä4 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		Auto auto1 = new Auto();
+		auto1.merkki = "Audi";
+		auto1.malli = "A5";
+		auto1.bensanMaara = 30;
+		auto1.NaytaTiedot();
 
-	}//Enf of main
+		auto1.Kiihdyta();
+		auto1.NaytaTiedot();
+
+	}//End of main
+}	
 	
 class Auto {
 
 	//Attribuutit
 	public String merkki;
-	public String Malli;
+	public String malli;
 	public int bensanMaara;
-}
+
 	//Metodit
 	public void Jarruta () {
 
-		System.out.println("Auto jarruttaa.")
+		System.out.println("Auto jarruttaa.");
 	}
 
 	public void Kiihdyta () {
 
-		System.out.println("Auto kiihtyy.")
+		System.out.println("Auto kiihtyy.");
+		bensanMaara = bensanMaara - 1;
 	}
 
 	public void NaytaTiedot () {
 
-		bensanMaara = bensanMaara - 1;
+		System.out.println("Auton merkki: " + merkki);
+		System.out.println("Auton malli: " + malli);
+		System.out.println("Auton bensan määrä: " + bensanMaara);
 	}
 
 }
