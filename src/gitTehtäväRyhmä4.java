@@ -12,10 +12,8 @@ public class gitTehtäväRyhmä4 {
 		auto1.Kiihdyta();
 		auto1.NaytaTiedot();
 
-		Auto auto2 = new Auto();
-		auto2.merkki = "Lada";
-		auto2.malli = "1200L";
-		auto2.bensanMaara = 10;
+		Auto auto2 = new Auto("Lada", "1200L", 10);
+		
 		auto2.NaytaTiedot();
 
 	}//End of main
