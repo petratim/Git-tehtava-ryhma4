@@ -73,7 +73,7 @@ class Auto {
 	{
 		tankkaus = 0;
 		int bensaaTankissa = bensanMaara + tankkaus;
-		System.out.println("Tankissa bensaa tankkauksen jälkeen " + bensaaTankissa + " litraa.")
+		System.out.println("Tankissa bensaa tankkauksen jälkeen " + bensaaTankissa + " litraa.");
 	}
 
 
