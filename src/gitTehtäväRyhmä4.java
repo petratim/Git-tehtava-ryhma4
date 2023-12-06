@@ -25,7 +25,7 @@ class Auto {
 	public String merkki;
 	public String malli;
 	public int bensanMaara;
-	public int tankkaus;
+
 
 	public Auto() //oletusmuodostin
 	{
@@ -67,9 +67,9 @@ class Auto {
 		System.out.println("Auton bensan määrä: " + bensanMaara);
 	}
 
-	public void tankkaa()
+	public void tankkaa(int tankkaus)
 	{
-		tankkaus = 0;
+		
 		int bensaaTankissa = bensanMaara + tankkaus;
 		System.out.println("Tankissa bensaa tankkauksen jälkeen " + bensaaTankissa + " litraa.");
 	}
